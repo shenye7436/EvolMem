@@ -9,13 +9,14 @@ The repository is under construction.
 
 ### Generation
 To generate answers:
-
-`python generations.py --api_key $API_KEY --gen_model xxx --input_root xxx --output_root xxx --num_workers xxx`
-
+```bash
+python generations.py --api_key $API_KEY --gen_model xxx --input_root xxx --output_root xxx --num_workers xxx
+```
 ### Evaluation
 To evaluate model answers:
-
-`python evaluations.py --api_key $API_KEY --gen_model xxx --judge_model xxx --threads xxx --input_root xxx --save_root xxx`
+```bash
+python evaluations.py --api_key $API_KEY --gen_model xxx --judge_model xxx --threads xxx --input_root xxx --save_root xxx
+```
 
 ## Citation
 
