@@ -5,11 +5,17 @@ Evaluating the memory capabilities of LLM and Agent systems across dimensions su
 
 The repository is under construction.
 
-## Code
+## Usage
 
-[`generations.py`](./generations.py) is used for batch processing of multi-source dialogue data located in the `dialogues` directory. It automatically concatenates historical dialogues with the final question, calls the specified LLM to generate answers, and saves the results uniformly as `generations/{gen_model}/gen_*.json`.
+### Generation
+To generate answers:
+```bash
+python generations.py --api_key $API_KEY --gen_model xxx --input_root xxx --output_root xxx --num_workers xxx
 
-[`evaluations.py`](./evaluations.py) is used for batch evaluations of multi-source model answer. Different evaluation methods target at different types of tasks. Evaluation results are saved uniformly as `evaluations/{gen_model}/eval_*.json`.
+### Evaluation
+To evaluate model answers:
+```bash
+python evaluations.py --api_key $API_KEY --gen_model xxx --judge_model xxx --threads xxx --input_root xxx --save_root xxx
 
 ## Citation
 
